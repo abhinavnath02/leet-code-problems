@@ -1,0 +1,21 @@
+class Solution {
+    public List<String> fizzBuzz(int n) {
+        List<String> fizzBuzz = new ArrayList<String>();
+      for(int i = 1; i <= n; i++)
+        {
+            if(i % 3 == 0 && i % 5 == 0) {
+               fizzBuzz.add("FizzBuzz");
+            } else if(i % 3 == 0) {
+                fizzBuzz.add("Fizz");
+            } else if(i % 5 == 0) {
+                fizzBuzz.add("Buzz");
+            } else {
+                String d = String.valueOf(i);
+                fizzBuzz.add(d);
+            }
+
+        
+    }
+    return fizzBuzz;
+}
+}
